@@ -1,0 +1,18 @@
+<div class="center root">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class="center">Добро пожаловать!</div>
+    <br>
+    <div>
+      <label>Имя</label>
+      <input name="login" type="text" ngModel required #login="ngModel">
+    </div>
+    <div>
+      <label>Пароль</label>
+      <input name="password" type="password" ngModel required #password="ngModel">
+    </div>
+    <div style="min-height:50px;"></div>
+    <div class="center">
+      <button>Вход</button>
+    </div>
+  </form>
+</div>
